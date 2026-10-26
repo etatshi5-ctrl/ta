@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATSHR STORE | شحن الألعاب</title>
+    <!-- خط تجوال العربي -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ملف التنسيقات -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- خلفية الخطوط المتوهجة -->
+    <div class="cyber-lines"></div>
+
+    <!-- الشريط العلوي Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-text">KATSHR<span class="orange">STORE</span></span>
+            <i class="fa-solid fa-gamepad logo-icon"></i>
+        </div>
+        
+        <div class="cart-btn" id="cartBtn">
+            <span class="badge" id="cartCount">3</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>السلة</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+    </header>
+
+    <!-- قسم الـ Hero الرئيسي -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">HERO</span>
+            <h1>اشحن ألعابك المفضلة بسرعة وسهولة</h1>
+            <p>أفضل الأسعار وتسليم فوري لجميع الألعاب الشهيرة</p>
+            <a href="#games" class="btn-cyan">استكشف الألعاب</a>
+        </div>
+    </section>
+
+    <!-- قسم شبكة الألعاب Games Grid -->
+    <main class="games-section" id="games">
+        <div class="section-tag">GAMES GRID</div>
+        
+        <div class="games-grid">
+            <!-- كارت لعبة 1 -->
+            <div class="game-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500&q=80" alt="Free Fire">
+                    <span class="badge-orange">الأكثر طلباً</span>
+                </div>
+                <div class="card-info">
+                    <h3>فراي فاير (Free Fire)</h3>
+                    <p class="price">من 1.99 $</p>
+                    <button class="btn-charge" onclick="addToCart('Free Fire')">
+                        <i class="fa-solid fa-bolt"></i> شحن الآن
+                    </button>
+                </div>
+            </div>
+
+            <!-- كارت لعبة 2 -->
+            <div class="game-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80" alt="PUBG Mobile">
+                </div>
+                <div class="card-info">
+                    <h3>ببجي موبايل (PUBG)</h3>
+                    <p class="price">من 2.49 $</p>
+                    <button class="btn-charge" onclick="addToCart('PUBG Mobile')">
+                        <i class="fa-solid fa-bolt"></i> شحن الآن
+                    </button>
+                </div>
+            </div>
+
+            <!-- كارت لعبة 3 -->
+            <div class="game-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=500&q=80" alt="Roblox">
+                </div>
+                <div class="card-info">
+                    <h3>روبلوكس (Roblox)</h3>
+                    <p class="price">من 4.99 $</p>
+                    <button class="btn-charge" onclick="addToCart('Roblox')">
+                        <i class="fa-solid fa-bolt"></i> شحن الآن
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الشريط السفلي Footer -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ KATSHR STORE</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

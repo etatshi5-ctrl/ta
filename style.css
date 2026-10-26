@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #12161c;
+    color: #ffffff;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+/* خلفية خطوط الليزر النيون */
+.cyber-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: 
+        linear-gradient(135deg, transparent 90%, rgba(255, 0, 150, 0.15) 100%),
+        linear-gradient(45deg, rgba(0, 242, 254, 0.1) 0%, transparent 10%);
+    z-index: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #181d24;
+    border-bottom: 1px solid #2a323d;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logo-text .orange {
+    color: #ff6600;
+}
+
+.logo-icon {
+    font-size: 26px;
+    color: #00f2fe;
+    filter: drop-shadow(0 0 5px #00f2fe);
+}
+
+.cart-btn {
+    background: #1c232d;
+    border: 1px solid #343e4d;
+    padding: 8px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+.cart-btn .badge {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background: #ff6600;
+    color: #fff;
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.cart-btn .arrow {
+    font-size: 12px;
+    color: #8899a6;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 320px;
+    background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(18, 22, 28, 0.75) 0%, rgba(18, 22, 28, 0.95) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-tag, .section-tag {
+    color: #8899a6;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    color: #b0bec5;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.btn-cyan {
+    background: #00f2fe;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.5);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-cyan:hover {
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.8);
+    transform: translateY(-2px);
+}
+
+/* Games Section */
+.games-section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Card Styling with Glow */
+.game-card {
+    background: #181d24;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #00f2fe;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+    transition: 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
+}
+
+.card-image {
+    position: relative;
+    height: 160px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-orange {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6600;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-info .price {
+    color: #b0bec5;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-charge {
+    width: 100%;
+    background: #00f2fe;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+    transition: 0.2s;
+}
+
+.btn-charge:hover {
+    background: #33f5ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #14181f;
+    border-top: 1px solid #2a323d;
+    color: #788896;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+}
